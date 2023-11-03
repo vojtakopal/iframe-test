@@ -2,5 +2,11 @@
   <head></head>
   <body>
     Hello, World!
+    <div id="output"></div>
+    <script>
+      document.on('ready', function() {
+        document.getElementById('output').text = 'Ready: ' + document.referrer + "\n" + document.location;
+      });
+    </script>
   </body>
 </html>
